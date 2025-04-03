@@ -1,0 +1,26 @@
+.home-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .category-list, .course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-list li, .course-list li {
+    margin: 15px;
+    text-align: center;
+  }
+  
+  img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,11 @@
+<div class="category-container">
+    <h2>Classes by Category</h2>
+    <h3> Select Category</h3>
+    <ul>
+      <li *ngFor="let category of categories">
+        <img [src]="category.image" alt="{{ category.name }}" />
+        <span>{{ category.name }}</span>
+      </li>
+    </ul>
+  </div>
+  

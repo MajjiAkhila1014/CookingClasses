@@ -1,0 +1,22 @@
+<<div class="home-container">
+  <h1>Welcome to TasteIt</h1>
+  <p>Discover and join amazing cooking classes.</p>
+
+  <!-- Classes by Category -->
+  <h2>Classes by Category</h2>
+  <ul class="category-list">
+    <li *ngFor="let category of categories">
+      <img [src]="'assets/images/' + category.image" [alt]="category.name">
+      <p>{{ category.name }}</p>
+    </li>
+  </ul>
+
+  <!-- Our Courses -->
+  <h2>Our Courses</h2>
+  <ul class="course-list">
+    <li *ngFor="let course of courses">
+      <img [src]="'assets/images/' + course.image" [alt]="course.name">
+      <p>{{ course.name }}</p>
+    </li>
+  </ul>
+</div>

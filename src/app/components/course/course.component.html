@@ -1,0 +1,7 @@
+<div class="courses-container">
+    <div class="course-card" *ngFor="let course of courses">
+       <img [src]="'assets/images/' + course.image" alt="{{ course.name }}">
+       <p>{{ course.name }}</p>
+    </div>
+ </div>
+ 

@@ -1,0 +1,9 @@
+[
+    { "name": "Baking", "image": "baking.jpg" },
+    { "name": "Italian Cuisine", "image": "italian.jpg" },
+    { "name": "Healthy Cooking", "image": "healthy.jpg" },
+    { "name": "Bread Making", "image": "bread.jpg" },
+    { "name": "Pasta Dishes", "image": "pasta.jpg" },
+    { "name": "Vegan Recipes", "image": "vegan.jpg" }
+ ]
+ 
