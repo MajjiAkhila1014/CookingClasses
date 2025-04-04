@@ -1,20 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';  // Add this
-
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component'; // ✅ Corrected Path
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent // ✅ Ensure this is declared
   ],
   imports: [
     BrowserModule,
-    CommonModule,  // Required for *ngFor
-    AppRoutingModule,
-    HttpClientModule  // Required to fetch JSON data
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

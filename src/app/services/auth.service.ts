@@ -1,26 +1,26 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
-  
-  constructor() {}
+  private apiUrl = 'https://your-api.com/auth';
 
-  login(email: string, password: string): boolean {
-    // Dummy authentication for now
-    if (email === 'admin@example.com' && password === 'password') {
-      localStorage.setItem('token', 'dummy-jwt-token');
-      return true;
-    }
-    return false;
+  constructor(private http: HttpClient) {}
+
+  login(credentials: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/login`, credentials).pipe(
+      map((response) => {
+        localStorage.setItem('token', response.token);
+        return response.user;
+      })
+    );
   }
 
-  isLoggedIn(): boolean {
-    return !!localStorage.getItem('token'); // Checks if token exists
-  }
-
-  logout(): void {
+  logout() {
     localStorage.removeItem('token');
   }
 }

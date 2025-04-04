@@ -1,25 +1,24 @@
 <div class="container">
-  <!-- Welcome Section -->
-  <h1 class="title">Welcome to TasteIt</h1>
-  <p class="description">Discover and join amazing cooking classes.</p>
+  <h1 style="text-align: center; color: red;">Welcome to TasteIt</h1>
 
-  <!-- Classes by Category -->
-  <h2 class="section-title">Classes by Category</h2>
-  <div class="category-container">
-    <div class="category" *ngFor="let category of categories">
-      <img [src]="'assets/images/' + category.image" [alt]="category.name">
-      <p>{{ category.name }}</p>
-    </div>
-  </div>
+  <p>Join our online cooking classes and learn to cook delicious dishes!</p>
 
-  <!-- Courses Section -->
-  <h2 class="section-title">Our Courses</h2>
-  <div class="courses-container">
-    <div class="course" *ngFor="let course of courses">
-      <img [src]="'assets/images/' + course.image" [alt]="course.name">
-      <p>{{ course.name }}</p>
-    </div>
+  <!-- Search Bar -->
+  <input type="text" class="search-bar" placeholder="Search for classes...">
+
+  <h2 class="center-heading">Classes by Category</h2>
+  <div class="image-container">
+    <img src="assets/images/categories/italian.jpg" alt="Italian Food">
+    <img src="assets/images/categories/healthy.jpg" alt="Healthy Food">
+    <img src="assets/images/categories/vegan.jpg" alt="Vegan Food">
   </div>
+  <button class="view-all">View All</button>
+
+  <h2 class="center-heading">Our Courses</h2>
+  <div class="image-container">
+    <img src="assets/images/courses/sushi.jpg" alt="Sushi Making">
+    <img src="assets/images/courses/tacos.jpg" alt="Tacos">
+    <img src="assets/images/courses/chocolate-cake.jpg" alt="Chocolate Cake">
+  </div>
+  <button class="view-all">View All</button>
 </div>
-
-  

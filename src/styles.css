@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Section Layout */
+.categories {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Category and Course Sections */
+.categories h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.categories div {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.categories img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.categories img:hover {
+    transform: scale(1.05);
+}
+
+/* View All Button */
+.view-all {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.view-all a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-all a:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: lightblue !important;
+  }
+  

@@ -1,22 +1,17 @@
-<<div class="home-container">
-  <h1>Welcome to TasteIt</h1>
-  <p>Discover and join amazing cooking classes.</p>
+<div class="center-content"></div>
+<h1>Welcome to TasteIt</h1>
+<p>Join our online cooking classes and learn to cook delicious dishes!</p>
 
-  <!-- Classes by Category -->
-  <h2>Classes by Category</h2>
-  <ul class="category-list">
-    <li *ngFor="let category of categories">
-      <img [src]="'assets/images/' + category.image" [alt]="category.name">
-      <p>{{ category.name }}</p>
-    </li>
-  </ul>
+<h2>Classes by Category</h2>
+<div>
+  <img src="assets/images/categories/italian.jpg" alt="Italian Food" style="margin: 20px;">
+  <img src="assets/images/categories/healthy.jpg" alt="Healthy Food" style="margin: 20px;">
+  <img src="assets/images/categories/vegan.jpg" alt="Vegan Food" style="margin: 20px;">
+</div>
 
-  <!-- Our Courses -->
-  <h2>Our Courses</h2>
-  <ul class="course-list">
-    <li *ngFor="let course of courses">
-      <img [src]="'assets/images/' + course.image" [alt]="course.name">
-      <p>{{ course.name }}</p>
-    </li>
-  </ul>
+<h2>Our Courses</h2>
+<div>
+  <img src="assets/images/courses/sushi.jpg" alt="Sushi Making" style="margin: 20px;">
+  <img src="assets/images/courses/tacos.jpg" alt="Tacos" style="margin: 20px;">
+  <img src="assets/images/courses/chocolate-cake.jpg" alt="Chocolate Cake" style="margin: 20px;">
 </div>
